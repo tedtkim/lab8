@@ -20,6 +20,7 @@ function initializePage() {
 	  ga("send", "event", "like", "click");
 
 	  if (!eventSent) {
+	  	var endTime = new Date().getTime();
 	  	var timeSpent = endTime - startTime;
 	  	ga('send', 'timing', 'Like', 'First Like', timeSpent);
 	  	eventSent = true;
